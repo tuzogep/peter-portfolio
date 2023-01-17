@@ -1,0 +1,294 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+/* color palette: #EEEEEE, #00ADB5, #393E46, #222831
+https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  visibility: hidden;
+}
+
+.light-section {
+  background-color:  #EEEEEE;
+}
+
+.dark-section {
+  color: #EEEEEE;
+  background-color: #393E46;
+}
+
+.black-section {
+  color: #EEEEEE;
+  background-color: #222831;
+}
+
+.light-section, .dark-section, .black-section {
+  padding: 6rem 0;
+}
+
+.page-section-heading {
+  font-weight: 700;
+  font-size: 37px;
+  letter-spacing: 0.25rem;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #00ADB5;
+}
+.nav-link {
+  color: #EEEEEE;
+}
+
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #EEEEEE;
+}
+
+.navbar-brand:hover {
+  color: #393E46;
+}
+
+.nav-item,  .navbar-toggler {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #393E46;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  color: #00ADB5;
+  background: #EEEEEE;
+}
+/* #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+  color: #00ADB5;
+  background: #EEEEEE;
+} */
+
+/* Home Section */
+.home {
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+.profile_photo {
+  max-width: 230px;
+  max-height: 300px;
+}
+
+.profile-heading {
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 0.5rem;
+    color: #222831;
+}
+.divider-custom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  bottom: 30px;
+}
+.divider-custom-icon {
+  color: #00ADB5;
+  font-size: 4rem;
+}
+.divider-custom-line {
+  border: none;
+  border-style: dotted none none;
+  width: 400px;
+  border-width: 14px;
+  border-color: #00ADB5;
+  margin-top: 30px
+}
+.profile-subheading {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.5rem;
+  color: #222831;
+  position: relative;
+  bottom: 50px;
+}
+.d-flex {
+  display: flex;
+}
+
+/* PORTFOLIO */
+
+.carousel {
+  margin-bottom: 80px;
+}
+
+.carousel-caption {
+  color: #EEEEEE;
+  text-shadow: 4px 4px 8px #393E46;
+}
+
+.carousel-caption-dark {
+  color: #222831;
+}
+
+
+/* Carousel with overlay */
+.overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  background-color: #00ADB5;
+}
+
+.carousel-item:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlay-text {
+  color: #EEEEEE;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+/* PORTFOLIO GRID ITEMS */
+.portfolio-container {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.project-card {
+  color: #EEEEEE;
+}
+
+.project-subtitle {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.box {
+  transition: box-shadow .3s;
+  float: left;
+}
+
+.box:hover {
+  box-shadow: 0 0 11px #393E46;
+}
+
+.box-dark {
+  transition: box-shadow .3s;
+  float: left;
+}
+
+.box-dark:hover {
+  box-shadow: 0 0 16px #393E46;
+}
+
+.project-1 {
+  background-color: #00ADB5;
+}
+
+.portfolio-item {
+  border-radius: 20px;
+}
+
+.project-2 {
+  background-color: #222831;
+}
+
+.project-3 {
+  background-color: #393E46;
+}
+
+
+/* About */
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+}
+
+.download-button {
+  color: #EEEEEE !important;
+  border-color: #00ADB5 !important;
+}
+
+.download-button:hover {
+  background-color: #00ADB5 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #769FCD;
+}
+
+/* Modal */
+.close-modal {
+  background-color: #00ADB5 !important;
+  border-color: #393E46 !important;
+}
+
+.modal-content {
+  background-color: #EEEEEE;
+}
+
+.modal-sub {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Contact */
+
+.form-floating input.form-control,
+.form-floating textarea.form-control {
+  font-size: 1.5rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  border-width: 1px;
+}
+.form-floating input.form-control:focus,
+.form-floating textarea.form-control:focus {
+  box-shadow: none;
+}
+.form-floating label {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+.submit-button {
+  background-color: #00ADB5 !important;
+  border-color: #393E46 !important;
+}
+
+/* Footer */
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer-link {
+  color: #EEEEEE;
+}
+
+/* Copyright Section */
+.copyright {
+  padding: 1% 1%;
+}
