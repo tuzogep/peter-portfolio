@@ -3,13 +3,14 @@ from datetime import datetime
 from forms import ContactForm
 from flask_bootstrap import Bootstrap
 import smtplib
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "8BYkEfBA6O6donzWasdfe2345lSihBXox7C0sKR6b"
+app.config['SECRET_KEY'] = os.environ.get("APP_SECRET_KEY")
 Bootstrap(app)
 
-MY_EMAIL = "peter.sas@yahoo.com"
-MY_PASSWORD = "gpbwtmthuoevfzbx"
+MY_EMAIL = os.environ.get("EMAIL_ADDRESS")
+MY_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 
 @app.route('/', methods=['GET', 'POST'])
