@@ -651,24 +651,19 @@
                   <img class="img-fluid rounded mb-5" src="{{ url_for('static', filename='assets/img/portfolio/color_palette_01.png')}}" alt="Image_Colour_Palette_Generator screenshot 01" />
                   <!-- Portfolio Modal - Text-->
                   <div class="mb-4 text-start">
-                    <p class="modal-sub">Flask, Numpy, PIL, Pandas</p>
+                    <p class="modal-sub">Flask, Bootstrap</p>
                     <p>The goal of this project: analysing a picture pixel by
-                      pixel and finding the 10 most common values. I learned
-                      PIL, Numpy and Pandas, but how to start?</p>
-                    <p>I created a minimal web app where file upload was
-                      possible. I used PIL to open the image. Numpy was my next
-                      tool, but I had to read the docs. So I created an array
-                      and got the shape of the image. Then I looped through all
-                      the pixels and saved them in a list.</p>
-                    <p>Okay, so how to find the 10 most common values? Reading
-                      the docs again, but now the Pandas. The value counts
-                      function helped me out. The brain of the app was done. </p>
+                      pixel and finding the 10 most common values. How to start?</p>
+                    <p>After some googling I found a nice little Python package on Pypi called ColorThief.
+                    I read the docs, installed the package and soon the brain of the app was done.</p>
                       <img class="img-fluid rounded mb-5" src="{{ url_for('static', filename='assets/img/portfolio/color_palette_02.png')}}" alt="Image_Colour_Palette_Generator screenshot 02" />
                     <p>I designed a simple site, where you can upload your
                       image. The app displays it together with the 10 most
                       common colours and their RGB and HEX codes. Project
                       complete.</p>
                     <a class="btn btn-outline-dark btn-social" href="https://github.com/tuzogep/Image_Colour_Palette_Generator" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a class="btn btn-outline-dark btn-social" href="https://image-colour-palette.herokuapp.com" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
                   </div>
                   <button class="btn btn-primary  close-modal" data-bs-dismiss="modal">
                     <i class="fas fa-xmark fa-fw"></i>
